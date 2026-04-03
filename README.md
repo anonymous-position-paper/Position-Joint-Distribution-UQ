@@ -2,7 +2,7 @@
 
 This repository is provided as anonymous reproducibility material for the experiments discussed in the rebuttal to the paper "Position: Predictive Uncertainty Is Not Enough -- Joint Distribution for Full Uncertainty Representation". Its purpose is to make the analysis behind Fig. 1 directly inspectable during review.
 
-![Paper Figure 1](Main%20Figures/Paper%20Figure%201.png)
+![Paper Figure 1](Main%20Figures/Paper_Figure_1.png)
 
 The main entry point is the notebook `evaluate_and_plot_ensemble_ood.ipynb`. It reproduces the evaluation workflow for deep ensembles on mixed ID/OOD test data, regenerates the Figure 1-style plot, and includes additional visualisations with a finer binning configuration so that the reviewer can inspect whether the qualitative behaviour depends on the grouping choice used in the plot.
 

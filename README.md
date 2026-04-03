@@ -2,13 +2,13 @@
 
 This repository is provided as anonymous reproducibility material for the experiments discussed in the rebuttal to the paper "Position: Predictive Uncertainty Is Not Enough -- Joint Distribution for Full Uncertainty Representation". Its purpose is to make the analysis behind Fig. 1 directly inspectable during review.
 
-![Paper Figure 1](<Main Figures/Paper Figure 1.png>)
+![Paper Figure 1](./Main%20Figures/Paper%20Figure%201.png)
 
 The main entry point is the notebook `evaluate_and_plot_ensemble_ood.ipynb`. It reproduces the evaluation workflow for deep ensembles on mixed ID/OOD test data, regenerates the Figure 1-style plot, and includes additional visualisations with a finer binning configuration so that the reviewer can inspect whether the qualitative behaviour depends on the grouping choice used in the plot.
 
 More specifically, the notebook loads the CIFAR-10 test data, mixes it with OOD data when required, loads the saved ensemble weights, runs inference for the ensemble seeds used in the paper, saves the corresponding uncertainty arrays, averages the results across seeds, and regenerates the final plot. It also includes examples showing how to reproduce the plots directly from stored result arrays without rerunning inference.
 
-The ![additional plots](<Main Figures>) support the same qualitative conclusion discussed in the paper and in the rebuttal: regions with higher uncertainty are enriched in OOD samples, but ID/OOD overlap still persists, and this behaviour remains visible under finer binning choices rather than appearing only under a single plotting configuration.
+The [additional plots](./Main%20Figures/) support the same qualitative conclusion discussed in the paper and in the rebuttal: regions with higher uncertainty are enriched in OOD samples, but ID/OOD overlap still persists, and this behaviour remains visible under finer binning choices rather than appearing only under a single plotting configuration.
 
 ## Repository structure
 
